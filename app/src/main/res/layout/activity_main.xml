@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabHideFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="520dp"
+        android:elevation="10dp"
+        android:scaleX="3"
+
+        android:scaleY="3"
+        android:src="@drawable/ic_launcher_foreground"
+        app:backgroundTint="#64FFFA"
+        app:backgroundTintMode="add"
+        app:rippleColor="#00FF0000"
+        app:useCompatPadding="false"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabHideFab"
+        android:layout_marginRight="70dp"
+        android:layout_marginBottom="-530dp"
+        android:layout_toLeftOf="@+id/fabHideFab"
+        android:src="@android:drawable/ic_menu_gallery"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabHideFab"
+        android:layout_marginLeft="75dp"
+        android:layout_marginBottom="-530dp"
+        android:layout_toRightOf="@+id/fabHideFab"
+        android:src="@android:drawable/ic_menu_sort_by_size" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabHideFab"
+        android:layout_marginRight="-50dp"
+        android:layout_marginBottom="-450dp"
+        android:layout_toLeftOf="@+id/fabHideFab"
+        android:src="@android:drawable/ic_media_play" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/audio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabHideFab"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="-470dp"
+        android:layout_toLeftOf="@+id/fabHideFab"
+        android:src="@android:drawable/stat_sys_headset" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/file"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabHideFab"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="-470dp"
+        android:layout_toRightOf="@+id/fabHideFab"
+        android:src="@android:drawable/ic_dialog_alert"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/UploadFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabHideFab"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="-470dp"
+        android:layout_toLeftOf="@+id/fabHideFab"
+        android:src="@android:drawable/ic_menu_upload"
+        android:visibility="invisible"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/DeleteUploadedFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabHideFab"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="-470dp"
+        android:layout_toRightOf="@+id/fabHideFab"
+        android:src="@android:drawable/ic_delete"
+        android:visibility="invisible"
+        ></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/ShareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/fabHideFab"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="-375dp"
+        android:layout_toRightOf="@+id/fabHideFab"
+        android:src="@android:drawable/ic_menu_send"
+        android:visibility="invisible"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="381dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Файл пока не выбран" />
+
+
+    <EditText
+        android:id="@+id/et_input"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/video"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Введите текст"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/iv_output"
+        android:layout_width="310dp"
+        android:layout_height="273dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/convert_to_pdf"
+        android:layout_width="117dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="165dp"
+        android:layout_marginRight="165dp"
+        android:layout_marginBottom="8dp"
+        android:text="to pdf" />
+
+
+
+</RelativeLayout>

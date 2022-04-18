@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "386664823547",
+    "project_id": "cloud-qr-code-servise",
+    "storage_bucket": "cloud-qr-code-servise.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:386664823547:android:3bc1a2606d611364178e5e",
+        "android_client_info": {
+          "package_name": "com.example.cloudqrcodeservise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "386664823547-jefvs9uu3chbvun516jq5k4tvuo8mmih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRXiiUACn_Ni2k5VccijbueFQtUJvC3O0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "386664823547-jefvs9uu3chbvun516jq5k4tvuo8mmih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
